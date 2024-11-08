@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya Varada | Creative Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d1b2a; /* Dark Blue */
+            color: #e0e1dd; /* Light Gray */
+        }
+        header {
+            background-image: linear-gradient(135deg, #1b263b 0%, #415a77 100%); /* Gradient of Navy and Slate Blue */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #e0e1dd; /* Light Gray */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffb703; /* Warm Yellow */
+        }
+        section {
+            padding: 60px 20px;
+            margin: 20px 0;
+            background-color: #1d3557; /* Darker Blue */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        h2 {
+            color: #ffb703; /* Warm Yellow */
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            width: 100px;
+            height: 4px;
+            background-color: #f4a261; /* Soft Orange */
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project {
+            border: 2px solid #f4a261; /* Soft Orange */
+            border-radius: 15px;
+            padding: 20px;
+            width: 30%;
+            margin-bottom: 30px;
+            background-color: #457b9d; /* Muted Blue */
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+        .project:hover img {
+            transform: scale(1.1);
+        }
+        .project h3 {
+            color: #ffb703; /* Warm Yellow */
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #264653; /* Deep Greenish Blue */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #2a9d8f; /* Teal */
+            border-radius: 10px;
+            background-color: #2d3a45; /* Darker Blue */
+            color: #e0e1dd; /* Light Gray */
+            font-family: 'Poppins', sans-serif;
+        }
+        button {
+            background-color: #2a9d8f; /* Teal */
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ffb703; /* Warm Yellow */
+            color: #264653; /* Deep Greenish Blue */
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: sticky;
+            bottom: 0;
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kavya Varada</h1>
+    <p>Creative Developer | Designer | Innovator</p>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Kavya, a creative developer with a passion for bringing innovative ideas to life through design and technology. My work spans across various disciplines, including web development, UX/UI design, and digital art. With a strong foundation in coding and a keen eye for aesthetics, I strive to create digital experiences that are both functional and visually stunning.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <img src="project1.jpg" alt="Screenshot of Portfolio Website">
+            <h3>Project 1: Creative Portfolio</h3>
+            <p>This portfolio showcases my ability to design and develop a responsive and visually appealing website.</p>
+            <a href="https://github.com/username/portfolio" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Screenshot of E-commerce Platform">
+            <h3>Project 2: E-commerce Platform</h3>
+            <p>A fully-featured e-commerce platform with an intuitive user interface and secure payment gateway integration.</p>
+            <a href="https://github.com/username/ecommerce" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="Screenshot of Blogging Website">
+            <h3>Project 3: Blogging Website</h3>
+            <p>A modern blogging platform that allows users to create, share, and comment on posts in a social community.</p>
+            <a href="https://github.com/username/blogging" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kavya Varada | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+``
